@@ -1,0 +1,471 @@
+/* ====================== GENERAL ===== */
+small {
+    font-family: var(--font-Montserrat);
+    color: var(--font-gray);
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+h1, h2 {
+    font-family: var(--font-Arvo);
+    margin: 20px 0 10px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+h3 {
+    font-family: var(--font-Arvo);
+    font-size: 22px;
+    line-height: 32px;
+    margin: 10px 0 20px;
+}
+
+p, a {
+    font-family: var(--font-Open);
+    font-size: 14px;
+}
+
+p {
+    line-height: 26px;
+    margin: 0;
+}
+
+a {
+    text-decoration-line: underline;
+}
+
+button {
+    font-family: var(--font-Open);
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+}
+
+button:has(i) {
+    margin-top: 20px;
+}
+
+.badge {
+    font-family: var(--font-Open);
+    font-size: 8px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    line-height: 20px;
+    padding: 0 10px;
+}
+
+/* ====================== PARENT ===== */
+main {
+    display: grid;
+}
+
+.sec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* ====================== SEC_1 ===== */
+.sec_1 {
+    grid-area: sec_1;
+    justify-content: space-around;
+}
+
+.sec_1>div>img {
+    width: 249px;
+}
+
+/* ====================== SEC_2 ===== */
+.sec_2 {
+    grid-area: sec_2;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* ====================== SEC_3 ===== */
+.sec_3 {
+    grid-area: sec_3;
+    flex-direction: column;
+}
+
+.sec_3>h3 {
+    max-width: 230px;
+}
+
+/* ====================== SEC_4 ===== */
+.sec_4 {
+    grid-area: sec_4;
+    justify-content: space-around;
+    align-items: stretch;
+    overflow: hidden;
+}
+
+.sec_4>div {
+    display: flex;
+    flex-direction: column;
+}
+
+.sec_4>div:first-child {
+    justify-content: space-between;
+}
+
+.sec_4>div:first-child div:has(img) {
+    width: 260%;
+    padding-left: 50%;
+    align-self: flex-end;
+}
+
+.sec_4>div:nth-child(2) {
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+/* ====================== SEC_5 ===== */
+.sec_5 {
+    grid-area: sec_5;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 5% 70px;
+    text-align: center;
+}
+
+.sec_5>div {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec_5>div>div:first-child {
+    display: flex;
+    flex-flow: column wrap;
+    border-radius: 50%;
+    min-width: 373px;
+    min-height: 373px;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec_5>div>div:first-child .badge {
+    font-size: 10px;
+    background-image: url("../imgs/flag-yellow.png");
+    background-repeat: no-repeat;
+    background-size: 12px;
+    background-position: 10px;
+    padding: 2px 10px 2px 30px;
+}
+
+.sec_5>div>div:first-child>div:has(img) {
+    width: 65%;
+    margin: 20px 0;
+}
+
+.sec_5>div>p {
+    width: 80%;
+    max-width: 290px;
+}
+
+.sec_5>div>button {
+    padding: 15px 30px;
+    margin-top: 30px;
+    border-radius: 10vh;
+}
+
+/* ====================== SEC_6 ===== */
+.sec_6 {
+    grid-area: sec_6;
+    flex-flow: column wrap;
+}
+
+.sec_6>div:has(img) {
+    position: relative;
+    left: -7%;
+    max-width: 250px;
+}
+
+/* ====================== SEC_7 ===== */
+.sec_7 {
+    grid-area: sec_7;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url('../imgs/UX.png');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: bottom;
+    background-size: 80%;
+    padding-top: 30px;
+    position: relative;
+}
+
+.sec_7>div:first-child {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+}
+
+.sec_7>h3 {
+    max-width: 280px;
+    padding: 30px 0;
+    margin: 0;
+}
+
+.sec_7>div:has(img) {
+    position: relative;
+    left: -17%;
+    width: 90%;
+}
+
+.sec_7>div:nth-child(3) {
+    align-self: flex-end;
+}
+
+/* ====================== SEC_8 ===== */
+.sec_8 {
+    grid-area: sec_8;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.sec_8>div {
+    display: flex;
+    flex-flow: column wrap;
+    border-radius: 50%;
+    width: 240px;
+    height: 240px;
+    padding: 0 34px;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec_8>div>div:has(img) {
+    width: 50px;
+}
+
+/* ====================== SEC_9 ===== */
+.sec_9 {
+    grid-area: sec_9;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.sec_9>h3 {
+    max-width: 75%;
+}
+
+/* ====================== SEC_10 ===== */
+.sec_10 {
+    grid-area: sec_10;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.sec_10>div:has(img) {
+    position: relative;
+    left: -15%;
+}
+
+.sec_10>div>img {
+    width: 271px;
+}
+
+.sec_10>h3 {
+    width: 30%;
+}
+
+/* ====================== MEDIA QUERY ===== */
+@media (max-width: 479px) {
+    main {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: 
+        "sec_2"
+        "sec_1"
+        "sec_3"
+        "sec_6"
+        "sec_4"
+        "sec_8"
+        "sec_7"
+        "sec_5"
+        "sec_9"
+        "sec_10"
+        ;
+    }
+
+/* ===== SEC_1 ===== */
+    .sec_1 {
+        flex-direction: column;
+        padding: 40px 4% 0;
+    }
+    .sec_1>div:first-child {
+        width: 90%;
+    }
+    .sec_1>div:has(img) {
+        margin: 40px auto 0;
+        position: relative;
+        left: -4%;
+    }
+
+/* ===== SEC_2 ===== */
+    .sec_2 h1 {
+        font-size: 10vw;
+        line-height: 1.4em;
+    }
+
+/* ===== SEC_3 ===== */
+    .sec_3 {
+        padding: 40px 0;
+    }
+
+/* ===== SEC_4 ===== */
+    .sec_4 {
+        flex-direction: column;
+        padding: 68px 4% 50px;
+    }
+    .sec_4>div {
+        width: 100%;
+    }
+    .sec_4>div:first-child {
+        margin-bottom: 32px;
+    }
+
+/* ===== SEC_6, SEC_9 ===== */
+    .sec_6, .sec_9 {
+        padding: 30px 0;
+    }
+    .sec_9>h3 {
+        max-width: 75%;
+    }
+
+/* ===== SEC_10 ===== */
+    .sec_10 {
+        flex-direction: column;
+        padding: 0 5% 30px;
+    }
+    .sec_10>h3 {
+        width: 100%;
+    }
+}
+
+@media (min-width: 480px) {
+    main {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto repeat(3, 1fr) repeat(4, auto);
+        grid-template-areas:
+        "sec_2 sec_2"
+        "sec_1 sec_1"
+        "sec_3 sec_6"
+        "sec_4 sec_4"
+        "sec_8 sec_5"
+        "sec_7 sec_5"
+        "sec_9 sec_9"
+        "sec_10 sec_10"
+        ;
+    }
+
+/* ===== SEC_1 ===== */
+    .sec_1 {
+        flex-direction: row;
+        padding: 0 4%;
+    }
+    .sec_1>div:first-child {
+        width: 32%;
+    }
+    .sec_1>div:has(img) {
+        margin: 40px 0 0;
+    }
+
+/* ===== SEC_2 ===== */
+    .sec_2 h1 {
+        font-size: 32px;
+        max-width: 80%;
+    }
+
+/* ===== SEC_3 ===== */
+    .sec_3 {
+        padding: 0;
+    }
+
+/* ===== SEC_4 ===== */
+    .sec_4 {
+        flex-direction: row;
+        padding: 68px 4% 0;
+    }
+
+    .sec_4>div:first-child {
+        width: 50%;
+        max-width: 180px;
+    }
+    .sec_4>div:nth-child(2) {
+        width: 40%;
+    }
+    .sec_4>div:first-child div:has(img) {
+        padding-right: 18px;
+    }
+
+/* ===== SEC_6, SEC_9 ===== */
+    .sec_6, .sec_9 {
+        padding: 30px 0;
+    }
+
+/* ===== SEC_10 ===== */
+    .sec_10 {
+        flex-direction: row;
+        padding: 0 5%;
+    }
+    .sec_10>h3 {
+        width: 34%;
+    }
+}
+
+@media (min-width: 1024px) {
+    main {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr 1fr 1fr 0.5fr;
+        grid-template-areas: 
+        "sec_1 sec_1 sec_2 sec_2"
+        "sec_3 sec_4 sec_4 sec_5"
+        "sec_6 sec_7 sec_7 sec_5"
+        "sec_8 sec_9 sec_10 sec_10"
+        ;
+    }
+
+/* ===== SEC_1 ===== */
+    .sec_1 {
+        flex-direction: row;
+    }
+    .sec_1>div:first-child {
+        width: 32%;
+    }
+    .sec_1>div:has(img) {
+        margin: 40px 0 0;
+    }
+
+/* ===== SEC_2 ===== */
+    .sec_2 h1 {
+        font-size: 48px;
+        line-height: 1em;
+        max-width: 60%;
+    }
+
+/* ===== SEC_4 ===== */
+    .sec_4 {
+        padding: 50px 4% 0;
+    }
+
+/* ===== SEC_6, SEC_9 ===== */
+    .sec_6, .sec_9 {
+        padding: 0;
+    }
+}

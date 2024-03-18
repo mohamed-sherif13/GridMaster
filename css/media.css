@@ -1,0 +1,146 @@
+@import "main.css";
+
+/* ================= MEDIA QUERY - RESPONSIVENESS  */
+
+@media (max-width: 479px) {
+    .sm-100 {
+        width: 100%;
+    }
+    .sm-50 {
+        width: 50%;
+    }
+    .sm-33 {
+        width: 33.33%;
+    }
+    .sm-25 {
+        width: 25%;
+    }
+    .sm-20 {
+        width: 20%;
+    }
+    .sm-16 {
+        width: 16.666%;
+    }
+
+    .text-center-sm {
+        text-align: center;
+    }
+    .text-left-sm {
+        text-align: left;
+    }
+    .text-right-sm {
+        text-align: right;
+    }
+
+    .container {
+        margin: 0 44px;
+    }
+}
+
+@media (min-width: 480px) {
+    .md-100 {
+        width: 100%;
+    }
+    .md-50 {
+        width: 50%;
+    }
+    .md-33 {
+        width: 33.33%;
+    }
+    .md-25 {
+        width: 25%;
+    }
+    .md-20 {
+        width: 20%;
+    }
+    .md-16 {
+        width: 16.666%;
+    }
+
+    .text-center-md {
+        text-align: center;
+    }
+    .text-left-md {
+        text-align: left;
+    }
+    .text-right-md {
+        text-align: right;
+    }
+
+    .container {
+        width: 87%;
+        margin: auto;
+    }
+}
+
+@media (min-width: 1024px) {
+    .lg-100 {
+        width: 100%;
+    }
+    .lg-50 {
+        width: 50%;
+    }
+    .lg-33 {
+        width: 33.33%;
+    }
+    .lg-25 {
+        width: 25%;
+    }
+    .lg-20 {
+        width: 20%;
+    }
+    .lg-16 {
+        width: 16.666%;
+    }
+
+    
+    .text-center-lg {
+        text-align: center;
+    }
+    .text-left-lg {
+        text-align: left;
+    }
+    .text-right-lg {
+        text-align: right;
+    }
+
+    .container {
+        width: 95%;
+    }
+}
+
+@media (min-width: 1280px) {
+    .xl-100 {
+        width: 100%;
+    }
+    .xl-50 {
+        width: 50%;
+    }
+    .xl-33 {
+        width: 33.33%;
+    }
+    .xl-25 {
+        width: 25%;
+    }
+    .xl-20 {
+        width: 20%;
+    }
+    .xl-16 {
+        width: 16.666%;
+    }
+
+    
+    .text-center-xl {
+        text-align: center;
+    }
+    .text-left-xl {
+        text-align: left;
+    }
+    .text-right-xl {
+        text-align: right;
+    }
+
+    .container {
+        width: 80%;
+    }
+}
